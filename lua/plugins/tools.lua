@@ -5,12 +5,17 @@ return {
     init = function()
       vim.env.PATH = vim.fn.stdpath("data") .. "/mason/bin:" .. vim.env.PATH
     end,
+    opts = {},
+  },
+  {
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
     opts = {
       ensure_installed = {
         "julia-lsp",
         "tree-sitter-cli",
+        "ruff",
+        "pylsp",
       },
     },
   },
-
 }
