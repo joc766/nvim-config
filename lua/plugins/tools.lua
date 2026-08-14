@@ -14,7 +14,7 @@ return {
         "julia-lsp",
         "tree-sitter-cli",
         "ruff",
-        "pylsp",
+        "sqlfluff",
       },
     },
   },
