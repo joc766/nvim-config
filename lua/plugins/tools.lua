@@ -1,21 +1,4 @@
 return {
-  {
-    "mason-org/mason.nvim",
-    lazy = false,
-    init = function()
-      vim.env.PATH = vim.fn.stdpath("data") .. "/mason/bin:" .. vim.env.PATH
-    end,
-    opts = {},
-  },
-  {
-    "WhoIsSethDaniel/mason-tool-installer.nvim",
-    opts = {
-      ensure_installed = {
-        "julia-lsp",
-        "tree-sitter-cli",
-        "ruff",
-        "sqlfluff",
-      },
-    },
-  },
+  { "mason-org/mason.nvim", enabled = false },
+  { "mason-org/mason-lspconfig.nvim", enabled = false },
 }

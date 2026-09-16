@@ -3,8 +3,9 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        ruff = {},
-        pylsp = { enabled = false },
+        gopls = { mason = false },
+        pyright = { mason = false },
+        ruff = { mason = false },
       },
     },
   },
